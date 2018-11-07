@@ -5,7 +5,8 @@
 
 html, body {
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
 }
 
 *, *:before, *:after {
@@ -40,7 +41,11 @@ html, body {
 .wrapper p,
 .wrapper ul {
     max-width: 80%;
-    text-align: justify;
+    text-align: right;
+}
+
+.wrapper .photo-me {
+    border-radius: 70%;
 }
 
 .logo-box {
@@ -55,6 +60,10 @@ html, body {
     min-width: 60px;
 }
 
+.projects-list li {
+    text-align: center;
+}
+
 .projects-list li ul {
     display: flex;
     justify-content: space-around;
@@ -65,12 +74,22 @@ ul {
     list-style: none;
 }
 
-.tech-list {
+.tech-list, .contact-list {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 50%;
+    width: 45%;
 }
+
+.wrapper .contact-list {
+    width: 30%;
+    margin-bottom: 25px;
+}
+
+.wrapper .contact-list li a {
+    text-decoration: none;
+}
+
 
 @media screen and (min-width: 600px) {
     .wrapper {
@@ -80,17 +99,17 @@ ul {
     }
     
     .wrapper p, 
-    .wrapper .tech-list {
-        width: 50%;
+    .wrapper .tech-list,
+    .wrapper .contact-list {
+        width: 45%;
         max-width: 500px;
+    }
+    
+    .wrapper .contact-list {
+        width: 30%;
     }
 
     .logo-box {
         max-width: 400px;
     }
-    
-    .logo-box .logo-img {
-        
-    }
-
 }
