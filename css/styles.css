@@ -43,9 +43,16 @@ html, body {
     text-align: justify;
 }
 
-.logo-img {
-    max-width: 120px;
-    min-width: 70px;
+.logo-box {
+    width: 85%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo-box .logo-img {
+    max-width: 90px;
+    min-width: 60px;
 }
 
 .projects-list li ul {
@@ -72,11 +79,18 @@ ul {
         text-align: right;
     }
     
-    .wrapper p {
+    .wrapper p, 
+    .wrapper .tech-list {
         width: 50%;
         max-width: 500px;
     }
 
+    .logo-box {
+        max-width: 400px;
+    }
     
+    .logo-box .logo-img {
+        
+    }
 
 }
