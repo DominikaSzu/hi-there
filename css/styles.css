@@ -33,10 +33,19 @@ html, body {
     text-align: center;
 }
 
+.wrapper h1 {
+    margin: 5vh 0;
+}
+
 .wrapper p,
 .wrapper ul {
     max-width: 80%;
     text-align: justify;
+}
+
+.logo-img {
+    max-width: 120px;
+    min-width: 70px;
 }
 
 .projects-list li ul {
