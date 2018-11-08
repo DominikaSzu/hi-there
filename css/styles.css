@@ -41,13 +41,19 @@ html, body {
 .wrapper p,
 .wrapper ul {
     max-width: 80%;
-    text-align: right;
+    text-align: justify;
 }
 
 .wrapper .photo-me {
     border-radius: 50%;
     width: 80%;
     max-width: 315px;
+}
+
+.wrapper .now-desc a {
+    text-decoration: none;
+    color: #af473c;
+    font-weight: 600;
 }
 
 .logo-box {
@@ -80,16 +86,54 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 45%;
+    width: 55%;
+}
+
+.wrapper .tech-list li svg {
+    font-size: 40px;
+    transition: all 0.3s;
+}
+
+.wrapper .contact-list a svg {
+    font-size: 30px;
+    transition: all 0.3s;
+}
+
+.wrapper .contact-list a svg:hover,
+.wrapper .tech-list li svg:hover {
+    color: #945d60;
+}
+
+.wrapper .projects-list li ul li svg {
+    font-size: 25px;
+}
+
+.wrapper .projects-list li ul li a {
+    color: black;
+    transition: all 0.3s;
+}
+
+.wrapper .projects-list li ul li a:hover {
+    color: #945d60;
+}
+
+.wrapper .projects-list li {
+    margin-bottom: 15px;
+}
+
+.wrapper .projects-list li p {
+    text-align: justify;
+    margin: 10px auto;
 }
 
 .wrapper .contact-list {
-    width: 30%;
+    width: 40%;
     margin-bottom: 25px;
 }
 
 .wrapper .contact-list li a {
     text-decoration: none;
+    color: black;
 }
 
 
@@ -139,6 +183,10 @@ ul {
     
     .wrapper .about-me {
         width: 80%;
+    }
+    
+    .wrapper .projects-list {
+        text-align: right;
     }
     
     .logo-box {
