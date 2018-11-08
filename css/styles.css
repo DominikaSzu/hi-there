@@ -23,7 +23,6 @@ html, body {
 }
 
 .wrapper > * {
-    border: 1px red solid;
     margin: 10px;
 }
 
@@ -36,6 +35,7 @@ html, body {
 
 .wrapper h1 {
     margin: 5vh 0;
+    color: #945d60;
 }
 
 .wrapper p,
@@ -45,7 +45,9 @@ html, body {
 }
 
 .wrapper .photo-me {
-    border-radius: 70%;
+    border-radius: 50%;
+    width: 80%;
+    max-width: 315px;
 }
 
 .logo-box {
@@ -91,25 +93,59 @@ ul {
 }
 
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
     .wrapper {
-        align-items: flex-end;
-        justify-content: space-between;
-        text-align: right;
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+    }
+    
+    .wrapper > * {
+        grid-column: 2/3;
+        justify-self: end;
+        
+    }
+    
+    .wrapper .me,
+    .wrapper .job,
+    .wrapper .about-me,
+    .wrapper .then,
+    .wrapper .then-desc,
+    .wrapper .now,
+    .wrapper .now-desc,
+    .wrapper .logo-box,
+    .wrapper .projects,
+    .wrapper .projects-desc,
+    .wrapper .projects-list,
+    .wrapper .tech,
+    .wrapper .tech-desc,
+    .wrapper .tech-list,
+    .wrapper .contact,
+    .wrapper .contact-desc,
+    .wrapper .contact-list {
+        margin-right: 6%;
+    }
+    
+    
+    .wrapper .photo-me {
+        grid-column: 1/2;
+        justify-self: end;
     }
     
     .wrapper p, 
     .wrapper .tech-list,
     .wrapper .contact-list {
-        width: 45%;
         max-width: 500px;
+    }
+    
+    .wrapper .about-me {
+        width: 80%;
+    }
+    
+    .logo-box {
+        max-width: 400px;
     }
     
     .wrapper .contact-list {
         width: 30%;
-    }
-
-    .logo-box {
-        max-width: 400px;
     }
 }
