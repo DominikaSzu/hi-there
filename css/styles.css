@@ -203,8 +203,9 @@ ul {
         max-width: 400px;
     }
     
+    .wrapper .tech-list,
     .wrapper .contact-list {
-        width: 30%;
+        width: 80%;
     }
 }
 
