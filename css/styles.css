@@ -95,13 +95,16 @@ ul {
   transition: all 0.3s;
 }
 
+.wrapper .tech-list li img.jquery-logo {
+  width: 40px;
+}
+
 .wrapper .contact-list a svg {
   font-size: 30px;
   transition: all 0.3s;
 }
 
-.wrapper .contact-list a svg:hover,
-.wrapper .tech-list li svg:hover {
+.wrapper .contact-list a svg:hover {
   color: #945d60;
 }
 
